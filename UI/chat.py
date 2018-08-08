@@ -22,7 +22,7 @@ chatterbot=ChatBot(
         'Alpha',
         trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
     )
-chatterbot.train("chatterbot.corpus.english")
+chatterbot.train("chatterbot.corpus.custom")
 
 def getresponse(text):
     global train

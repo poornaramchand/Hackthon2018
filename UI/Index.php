@@ -19,6 +19,23 @@ if (isset ( $_POST ['enter'] )) {
         $fp = fopen ( "log.html", 'a' );
         fwrite ( $fp, "<b> <div class='msgln' style= 'background-color: #efefef' ><i>User " . $_SESSION ['name'] . " has joined the chat session.</i><br></div></b>" );
         fwrite ( $fp, "<b> <div class='msgln' style= 'background-color: #A5D175'><i> Alpha has joined the chat session.</i><br></div></b>" );
+        fwrite ( $fp, "<div class='msglnuser'> <b>Alpha</b> :<i> Hello ! This is Alpha. How may i assist  you .</i> <br >
+<style>
+.msglnuser{  color: black;
+    background-color: #A5D175;
+     margin-right: 100px;
+    margin-top: 10px;
+    margin-left: 15px;
+   
+display:block;
+padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+   
+</style>
+</div>" );
        
         fclose ( $fp );
     } else {
@@ -33,6 +50,7 @@ if (isset ( $_GET ['logout'] )) {
     fwrite ( $fp, "<div class='msgln'><i>User " . $_SESSION ['name'] . " has left the chat session.</i><br></div>" );
     fclose ( $fp );
     unlink('log.html');
+   # unlink('db.sqlite3');
     session_destroy ();
     header ( "Location: index.php" ); // Redirect the user
 }
@@ -137,7 +155,7 @@ a:hover {
 <div id="wrapper">
 		<div id="menu">
 			<p class="welcome">
-			<img src="cdk logo.png" alt="cdk" style="width:450px;height:50px;"
+			<img src="cdk logo.png" alt="cdk" style="width:450px;height:50px;">
 			<b> Welcome, <?php echo $_SESSION['name']; ?> </b>
 			</p>
 			<p class="logout">
