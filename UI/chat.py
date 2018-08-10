@@ -22,13 +22,13 @@ chatterbot=ChatBot(
         'Alpha',
         trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
     )
-chatterbot.train("chatterbot.corpus.custom")
+chatterbot.train("chatterbot.corpus.english")
 
 def getresponse(text):
     global train
     print(type(text))
     response_text = chatterbot.get_response(text)
-    print(type(response_text))
+    print(response_text.text)
     return (response_text.text)
 
     #SendEmailSMTP.send_Email()

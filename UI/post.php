@@ -21,7 +21,7 @@ padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-radius: 50px;
+    border-radius: 15px;
     font-style: italic;
 word-wrap: break-word;} 
 .CDKuser{background-color: #efefef;
@@ -35,11 +35,10 @@ padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-radius: 50px;
+    border-radius: 15px;
 word-wrap: break-word;}
    
 </style>");
     fclose($fp);
 }
 ?>
-

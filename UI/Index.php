@@ -6,7 +6,7 @@ function loginForm() {
     <form action="index.php" method="post">
         <p>Please enter your name to continue:</p>
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" autofocus />
         <input type="submit" name="enter" id="enter" value="Enter" />
     </form>
     </div>
@@ -32,7 +32,7 @@ padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-radius: 50px;
+    border-radius: 15px;
    
 </style>
 </div>" );
@@ -174,7 +174,7 @@ a:hover {
 		?></div>
 
 		<form name="message" action="">
-			<input name="usermsg" type="text" id="usermsg" size="63" /> <input
+			<input name="usermsg" type="text" id="usermsg" size="63" autofocus/> <input
 				name="submitmsg" type="submit" id="submitmsg" value="Send" />
 		</form>
 	</div>
